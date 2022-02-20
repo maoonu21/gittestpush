@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const hello = require('./action/action');
 
 (async () => {
 	const browser = await puppeteer.launch({
@@ -8,7 +9,9 @@ const puppeteer = require('puppeteer');
 	await page.setViewport({ width: 1200, height: 800 });	// default 800*400
 	await page.goto('https://example.com');
 	await page.screenshot({ path: './example.png' });
+	await hello();
 
 	await browser.close();
 })();
+
 
