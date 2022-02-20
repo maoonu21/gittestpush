@@ -9,6 +9,7 @@ const hello = require('./action/action');
 	await page.setViewport({ width: 1200, height: 800 });	// default 800*400
 	await page.goto('https://example.com');
 	await page.screenshot({ path: './example.png' });
+	// hello
 	await hello();
 
 	await browser.close();
