@@ -10,6 +10,7 @@ const hello = require('./action/action');
 	await page.goto('https://example.com');
 	await page.screenshot({ path: './example.png' });
 	// hello
+	//test
 	await hello();
 
 	await browser.close();
